@@ -1,0 +1,194 @@
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f3f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111827;
+  color: #ffffff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.header-inner {
+  text-align: center;
+}
+
+.header-inner h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header-inner p {
+  font-size: 0.9rem;
+  color: #c7c7c7;
+}
+
+/* ===== Main Container ===== */
+.main-container {
+    font-family: "Segoe UI", Arial, sans-serif;
+
+  max-width: 1200px;
+  margin: 120px auto 40px;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  font-family:sans-serif;
+}
+/* card */
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #111827;
+  padding-bottom: 6px;
+}
+
+.card ul {
+  padding-left: 18px;
+}
+
+.card li {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+}
+
+/* Wrapper */
+.explore-wrapper {
+  
+  padding: 2rem;
+  background: #e8e6e6;
+  font-family: system-ui, sans-serif;
+}
+/* Gap between definition lists */
+.explore-container dl {
+  margin-bottom: 2rem;
+}
+
+
+
+
+/* Main heading */
+.explore-heading {
+  text-align: center;
+  font-size: 2.2rem;  
+  margin-bottom: 2rem;
+}
+
+/* Card container */
+.explore-container {
+    font-family: "Segoe UI", Arial, sans-serif;
+margin-bottom: 2rem !important;
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+/* Chapter title */
+.explore-chapter-title {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Definition list block */
+.explore-container dl {
+  background: #f9fbfd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Every dd = its own styled block */
+.explore-container dd {
+  margin: 0.8rem 0;
+  padding: 0.8rem 1rem;
+  background: #ffffff;
+  border-left: 4px solid #4a90e2;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333;
+  
+}
+
+/* Image dd styling */
+.explore-container dd figure {
+  margin: 0;
+  text-align: center;
+}
+
+.explore-container dd img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.table1 {
+  width: 100%;
+  margin: 1rem 0;
+
+  border-collapse: separate;   /* NOT collapse */
+  border-spacing: 0;
+
+  border-radius: 5px;
+  overflow: hidden;            /* IMPORTANT */
+
+  border: 1px solid #615d5d;
+}
+
+.table1 th{
+  border: 1px solid #464444;
+  background: #45d1ff;
+  color: black;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1.5rem;
+  
+}
+.table1 td {
+ background: #b8b9ba;
+  color: black;
+  border: 1px solid #615d5d;
+  padding: 0.75rem;
+  text-align: center;
+}
