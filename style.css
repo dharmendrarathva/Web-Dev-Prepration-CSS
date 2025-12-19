@@ -120,7 +120,7 @@ margin-bottom: 2rem !important;
 
 /* Chapter title */
 .explore-chapter-title {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   text-align: center;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #ddd;
@@ -133,7 +133,7 @@ margin-bottom: 2rem !important;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 1.2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 
@@ -144,7 +144,7 @@ margin-bottom: 2rem !important;
   background: #ffffff;
   border-left: 4px solid #4a90e2;
   border-radius: 4px;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   color: #333;
   
 }
@@ -162,33 +162,197 @@ margin-bottom: 2rem !important;
   border: 1px solid #ccc;
 }
 
-
-.table1 {
+/* tables */
+table {
   width: 100%;
-  margin: 1rem 0;
-
-  border-collapse: separate;   /* NOT collapse */
-  border-spacing: 0;
-
-  border-radius: 5px;
-  overflow: hidden;            /* IMPORTANT */
-
-  border: 1px solid #615d5d;
+  table-layout: fixed; /* forces equal column widths */
+  border-collapse: collapse;
+  border: 2px solid #d1d5db;
+  margin: 1.5rem 0;
+  font-size: 15px;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-.table1 th{
-  border: 1px solid #464444;
-  background: #45d1ff;
-  color: black;
-  padding: 0.75rem;
+caption
+{
+  caption-side: top;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #000000;
+  margin-top: 8px;
+}
+
+thead th {
+    text-align: center;
+
+  background: #f5f7fa;
+  color: #222;
+  font-weight: 600;
+  border-bottom: 2px solid #cfd6e0;
+}
+
+th{
+  padding: 10px 12px;
+  border-bottom: 1px solid #e1e4e8;
   text-align: center;
   font-size: 1.5rem;
+}
+td {
   
-}
-.table1 td {
- background: #b8b9ba;
-  color: black;
-  border: 1px solid #615d5d;
-  padding: 0.75rem;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e1e4e8;
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
+
+tbody tr:hover {
+  background: #f9fbfd;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+/* Attribute Selectors */
+
+.auth-form{
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Enlarge checkbox safely */
+.remember input[type="checkbox"] {
+  transform: scale(1.5);
+  margin: 0;
+  accent-color: green;
+}
+
+/* Text alignment */
+.remember span {
+  line-height: 1;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+a[target="_blank"] {
+  color: rgb(30, 51, 169);
+  font-weight: bold;
+}
+a[href^="https"] {
+  color: green;
+}
+a[href$=".pdf"] {
+  color: orange;
+}
+
+a[href*="forgot"] {
+  color: blue;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.links{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+code{
+  display: flex;
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 1.5rem;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+
+  /* outline */
+  outline: 3px solid #111827;
+}
+
+
+.btn1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+
+  /* outline */
+  outline: 3px solid #111827;
+  outline-offset: 3px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 5px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.red { background: red; }
+.blue { background: blue; }
+.green { background: green; }
+
+/* hide B completely */
+.blue {
+  display: none;
+}
+
+
+.hide {
+  visibility: hidden;
+}
+
