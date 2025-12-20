@@ -352,7 +352,180 @@ code{
 }
 
 
+
+
 .hide {
   visibility: hidden;
 }
+.PBox{
+  width: 790px;
+  height: 300px;
+  background: steelblue;
+  color: white;
+  top: 30px;
+  padding: 20px;
+  left: 130px;
+    overflow: auto; 
+         /* enables scrolling only when needed */
 
+}
+
+.positioning{
+  position: static;
+  width: 120px;
+  height: 100px;
+  background: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  top: 2rem;
+
+}
+
+.box5 {
+  width: 120px;
+  height: 90px;
+  background: steelblue;
+  color: white;
+  position: relative;
+  top: 30px;
+  padding: 20px;
+  text-align: center;
+  left: 130px;
+}
+
+.rel{
+  position: relative;
+  width: 120px;
+  height: 100px;
+  background: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5rem;
+  margin-left: 18rem;
+}
+
+.fix{
+  position: fixed;
+  width: 120px;
+  height: 100px;
+  background: #000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  top: 20rem;
+}
+
+.stick{
+   position: sticky;
+  bottom: 0;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 12px;
+}
+
+
+.page {
+  min-height: 20vh;   /* page scroll */
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 12px;
+}
+
+.parent {
+  position: relative;      /* reference point */
+  width: 250px;
+  height: 150px;
+  background: steelblue;
+  color: white;
+  padding: 20px;
+}
+
+.child {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: black;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+
+
+
+/* Parent */
+.card4 {
+  position: relative; /* reference */
+  width: 250px;
+  height: 150px;
+  background: #eaeaea;
+  padding: 20px;
+}
+
+/* Absolute child - lower layer */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: crimson;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  z-index: 1;
+}
+
+/* Absolute child - higher layer */
+.overlay {
+  position: absolute;
+  inset: 0;            /* top:0 right:0 bottom:0 left:0 */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;          /* sits above badge */
+}
+
+
+.cont1{
+    display: flex;
+    width: 790px;
+    height: 500px;
+    background: #000;
+    
+}
+
+.item1,.item2,.item3{
+  width: 100px;
+  height: 100px;
+  background: #2170c5;
+  color: #000;
+  padding: 30px;
+  text-align: center;
+  border: 2px solid rgb(172, 0, 0);
+}
+
+.cont2{
+  display: flex;
+  flex-direction: column-reverse;
+    width: 790px;
+    height: 500px;
+    background: #000;
+}
+
+.cont3{
+  display: flex;
+  justify-content:space-evenly;
+    width: 790px;
+    height: 500px;
+    background: #000;
+}

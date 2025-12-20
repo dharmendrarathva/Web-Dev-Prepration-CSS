@@ -1015,234 +1015,234 @@
     </div>
 
     <div class="explore-container">
-            <h2 class="explore-chapter-title">Display & Visibility</h2>
+      <h2 class="explore-chapter-title">Display & Visibility</h2>
 
-            <dl>
-              display
-              <dd>
-                Controls how an element participates in layout.
-              </dd>
-              <dd>
-                <pre>
+      <dl>
+        display
+        <dd>
+          Controls how an element participates in layout.
+        </dd>
+        <dd>
+          <pre>
                   <code>
 .block {
         display: block;
       }
                   </code>
                 </pre>
-              </dd>
-              <dd>
-                <table border="1" cellpadding="8" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Display Value</th>
-      <th>What It Does</th>
-      <th>Common Use</th>
-    </tr>
-  </thead>
+        </dd>
+        <dd>
+          <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Display Value</th>
+                <th>What It Does</th>
+                <th>Common Use</th>
+              </tr>
+            </thead>
 
-  <tbody>
-    <!-- Basic -->
-    <tr>
-      <td rowspan="5">Basic</td>
-      <td>block</td>
-      <td>Starts on a new line and takes full width</td>
-      <td>Sections, divs, paragraphs</td>
-    </tr>
-    <tr>
-      <td>inline</td>
-      <td>Stays in the same line, size by content only</td>
-      <td>Text, links, spans</td>
-    </tr>
-    <tr>
-      <td>inline-block</td>
-      <td>Inline but width and height work</td>
-      <td>Buttons, badges</td>
-    </tr>
-    <tr>
-      <td>none</td>
-      <td>Removed from layout completely</td>
-      <td>Hide elements</td>
-    </tr>
-    <tr>
-      <td>contents</td>
-      <td>Element removed, children remain</td>
-      <td>Semantic wrappers</td>
-    </tr>
+            <tbody>
+              <!-- Basic -->
+              <tr>
+                <td rowspan="5">Basic</td>
+                <td>block</td>
+                <td>Starts on a new line and takes full width</td>
+                <td>Sections, divs, paragraphs</td>
+              </tr>
+              <tr>
+                <td>inline</td>
+                <td>Stays in the same line, size by content only</td>
+                <td>Text, links, spans</td>
+              </tr>
+              <tr>
+                <td>inline-block</td>
+                <td>Inline but width and height work</td>
+                <td>Buttons, badges</td>
+              </tr>
+              <tr>
+                <td>none</td>
+                <td>Removed from layout completely</td>
+                <td>Hide elements</td>
+              </tr>
+              <tr>
+                <td>contents</td>
+                <td>Element removed, children remain</td>
+                <td>Semantic wrappers</td>
+              </tr>
 
-    <!-- Flex -->
-    <tr>
-      <td rowspan="2">Flexbox</td>
-      <td>flex</td>
-      <td>Flex container (block-level)</td>
-      <td>Navbars, rows</td>
-    </tr>
-    <tr>
-      <td>inline-flex</td>
-      <td>Flex container (inline-level)</td>
-      <td>Inline UI groups</td>
-    </tr>
+              <!-- Flex -->
+              <tr>
+                <td rowspan="2">Flexbox</td>
+                <td>flex</td>
+                <td>Flex container (block-level)</td>
+                <td>Navbars, rows</td>
+              </tr>
+              <tr>
+                <td>inline-flex</td>
+                <td>Flex container (inline-level)</td>
+                <td>Inline UI groups</td>
+              </tr>
 
-    <!-- Grid -->
-    <tr>
-      <td rowspan="3">Grid</td>
-      <td>grid</td>
-      <td>Grid container (block-level)</td>
-      <td>Page layouts</td>
-    </tr>
-    <tr>
-      <td>inline-grid</td>
-      <td>Grid container (inline-level)</td>
-      <td>Inline grids</td>
-    </tr>
-    <tr>
-      <td>subgrid</td>
-      <td>Inherits grid from parent</td>
-      <td>Nested grid layouts</td>
-    </tr>
+              <!-- Grid -->
+              <tr>
+                <td rowspan="3">Grid</td>
+                <td>grid</td>
+                <td>Grid container (block-level)</td>
+                <td>Page layouts</td>
+              </tr>
+              <tr>
+                <td>inline-grid</td>
+                <td>Grid container (inline-level)</td>
+                <td>Inline grids</td>
+              </tr>
+              <tr>
+                <td>subgrid</td>
+                <td>Inherits grid from parent</td>
+                <td>Nested grid layouts</td>
+              </tr>
 
-    <!-- Table -->
-    <tr>
-      <td rowspan="10">Table</td>
-      <td>table</td>
-      <td>Behaves like &lt;table&gt;</td>
-      <td>Table layouts</td>
-    </tr>
-    <tr>
-      <td>inline-table</td>
-      <td>Inline table</td>
-      <td>Inline tabular data</td>
-    </tr>
-    <tr>
-      <td>table-row</td>
-      <td>Behaves like &lt;tr&gt;</td>
-      <td>Custom rows</td>
-    </tr>
-    <tr>
-      <td>table-row-group</td>
-      <td>Behaves like &lt;tbody&gt;</td>
-      <td>Group rows</td>
-    </tr>
-    <tr>
-      <td>table-header-group</td>
-      <td>Behaves like &lt;thead&gt;</td>
-      <td>Table headers</td>
-    </tr>
-    <tr>
-      <td>table-footer-group</td>
-      <td>Behaves like &lt;tfoot&gt;</td>
-      <td>Table footers</td>
-    </tr>
-    <tr>
-      <td>table-cell</td>
-      <td>Behaves like &lt;td&gt;</td>
-      <td>Table cells</td>
-    </tr>
-    <tr>
-      <td>table-column</td>
-      <td>Behaves like &lt;col&gt;</td>
-      <td>Column styling</td>
-    </tr>
-    <tr>
-      <td>table-column-group</td>
-      <td>Behaves like &lt;colgroup&gt;</td>
-      <td>Column groups</td>
-    </tr>
-    <tr>
-      <td>table-caption</td>
-      <td>Behaves like &lt;caption&gt;</td>
-      <td>Table title</td>
-    </tr>
+              <!-- Table -->
+              <tr>
+                <td rowspan="10">Table</td>
+                <td>table</td>
+                <td>Behaves like &lt;table&gt;</td>
+                <td>Table layouts</td>
+              </tr>
+              <tr>
+                <td>inline-table</td>
+                <td>Inline table</td>
+                <td>Inline tabular data</td>
+              </tr>
+              <tr>
+                <td>table-row</td>
+                <td>Behaves like &lt;tr&gt;</td>
+                <td>Custom rows</td>
+              </tr>
+              <tr>
+                <td>table-row-group</td>
+                <td>Behaves like &lt;tbody&gt;</td>
+                <td>Group rows</td>
+              </tr>
+              <tr>
+                <td>table-header-group</td>
+                <td>Behaves like &lt;thead&gt;</td>
+                <td>Table headers</td>
+              </tr>
+              <tr>
+                <td>table-footer-group</td>
+                <td>Behaves like &lt;tfoot&gt;</td>
+                <td>Table footers</td>
+              </tr>
+              <tr>
+                <td>table-cell</td>
+                <td>Behaves like &lt;td&gt;</td>
+                <td>Table cells</td>
+              </tr>
+              <tr>
+                <td>table-column</td>
+                <td>Behaves like &lt;col&gt;</td>
+                <td>Column styling</td>
+              </tr>
+              <tr>
+                <td>table-column-group</td>
+                <td>Behaves like &lt;colgroup&gt;</td>
+                <td>Column groups</td>
+              </tr>
+              <tr>
+                <td>table-caption</td>
+                <td>Behaves like &lt;caption&gt;</td>
+                <td>Table title</td>
+              </tr>
 
-    <!-- List -->
-    <tr>
-      <td>List</td>
-      <td>list-item</td>
-      <td>Shows bullet or number</td>
-      <td>Custom lists</td>
-    </tr>
+              <!-- List -->
+              <tr>
+                <td>List</td>
+                <td>list-item</td>
+                <td>Shows bullet or number</td>
+                <td>Custom lists</td>
+              </tr>
 
-    <!-- Ruby -->
-    <tr>
-      <td rowspan="5">Ruby</td>
-      <td>ruby</td>
-      <td>Ruby annotation container</td>
-      <td>East Asian text</td>
-    </tr>
-    <tr>
-      <td>ruby-base</td>
-      <td>Base text</td>
-      <td>Kanji text</td>
-    </tr>
-    <tr>
-      <td>ruby-text</td>
-      <td>Annotation text</td>
-      <td>Pronunciation</td>
-    </tr>
-    <tr>
-      <td>ruby-base-container</td>
-      <td>Groups ruby base</td>
-      <td>Advanced ruby layout</td>
-    </tr>
-    <tr>
-      <td>ruby-text-container</td>
-      <td>Groups ruby text</td>
-      <td>Advanced ruby layout</td>
-    </tr>
+              <!-- Ruby -->
+              <tr>
+                <td rowspan="5">Ruby</td>
+                <td>ruby</td>
+                <td>Ruby annotation container</td>
+                <td>East Asian text</td>
+              </tr>
+              <tr>
+                <td>ruby-base</td>
+                <td>Base text</td>
+                <td>Kanji text</td>
+              </tr>
+              <tr>
+                <td>ruby-text</td>
+                <td>Annotation text</td>
+                <td>Pronunciation</td>
+              </tr>
+              <tr>
+                <td>ruby-base-container</td>
+                <td>Groups ruby base</td>
+                <td>Advanced ruby layout</td>
+              </tr>
+              <tr>
+                <td>ruby-text-container</td>
+                <td>Groups ruby text</td>
+                <td>Advanced ruby layout</td>
+              </tr>
 
-    <!-- Global -->
-    <tr>
-      <td rowspan="5">Global</td>
-      <td>inherit</td>
-      <td>Uses parent value</td>
-      <td>Consistent styling</td>
-    </tr>
-    <tr>
-      <td>initial</td>
-      <td>Resets to default</td>
-      <td>Reset styles</td>
-    </tr>
-    <tr>
-      <td>unset</td>
-      <td>Inherit or initial</td>
-      <td>Safe reset</td>
-    </tr>
-    <tr>
-      <td>revert</td>
-      <td>Reverts to user/UA styles</td>
-      <td>Undo custom CSS</td>
-    </tr>
-    <tr>
-      <td>revert-layer</td>
-      <td>Reverts current cascade layer</td>
-      <td>Layered CSS</td>
-    </tr>
-  </tbody>
-</table>
+              <!-- Global -->
+              <tr>
+                <td rowspan="5">Global</td>
+                <td>inherit</td>
+                <td>Uses parent value</td>
+                <td>Consistent styling</td>
+              </tr>
+              <tr>
+                <td>initial</td>
+                <td>Resets to default</td>
+                <td>Reset styles</td>
+              </tr>
+              <tr>
+                <td>unset</td>
+                <td>Inherit or initial</td>
+                <td>Safe reset</td>
+              </tr>
+              <tr>
+                <td>revert</td>
+                <td>Reverts to user/UA styles</td>
+                <td>Undo custom CSS</td>
+              </tr>
+              <tr>
+                <td>revert-layer</td>
+                <td>Reverts current cascade layer</td>
+                <td>Layered CSS</td>
+              </tr>
+            </tbody>
+          </table>
 
-              
-        
 
-              </dd>
-              <dd>
-                <pre>
+
+
+        </dd>
+        <dd>
+          <pre>
                   <code>
 .blue {
         display: none;
       }
                   </code>
                 </pre>
-               <div class="box red">A</div>
-<div class="box blue">B</div>
-<div class="box green">C</div>
+          <div class="box red">A</div>
+          <div class="box blue">B</div>
+          <div class="box green">C</div>
 
 
-              </dd>
-              <dd>Used for elements that should appear only on action.
-                <h3>Dropdown menu</h3>
-                <h3>Modal dialog</h3>
-                <pre>
+        </dd>
+        <dd>Used for elements that should appear only on action.
+          <h3>Dropdown menu</h3>
+          <h3>Modal dialog</h3>
+          <pre>
                   <code>
 .menu{
           display: none;
@@ -1253,74 +1253,74 @@
 
                   </code>
                 </pre>
-              </dd>
+        </dd>
 
-            </dl>
-            <dl>
-visibility
-<dd>
-  <table border="1" cellpadding="8" cellspacing="0">
-  <thead>
-    <tr>
-      <th>Value</th>
-      <th>Visible?</th>
-      <th>Space Reserved?</th>
-      <th>Meaning / Use</th>
-    </tr>
-  </thead>
+      </dl>
+      <dl>
+        visibility
+        <dd>
+          <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Value</th>
+                <th>Visible?</th>
+                <th>Space Reserved?</th>
+                <th>Meaning / Use</th>
+              </tr>
+            </thead>
 
-  <tbody>
-    <tr>
-      <td>visible</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Default state; element is shown normally</td>
-    </tr>
+            <tbody>
+              <tr>
+                <td>visible</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Default state; element is shown normally</td>
+              </tr>
 
-    <tr>
-      <td>hidden</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>Element is invisible but still occupies space</td>
-    </tr>
+              <tr>
+                <td>hidden</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Element is invisible but still occupies space</td>
+              </tr>
 
-    <tr>
-      <td>collapse</td>
-      <td>No*</td>
-      <td>No*</td>
-      <td>Used for table rows/columns to collapse space</td>
-    </tr>
+              <tr>
+                <td>collapse</td>
+                <td>No*</td>
+                <td>No*</td>
+                <td>Used for table rows/columns to collapse space</td>
+              </tr>
 
-    <tr>
-      <td>inherit</td>
-      <td>Depends</td>
-      <td>Depends</td>
-      <td>Inherits visibility from parent</td>
-    </tr>
+              <tr>
+                <td>inherit</td>
+                <td>Depends</td>
+                <td>Depends</td>
+                <td>Inherits visibility from parent</td>
+              </tr>
 
-    <tr>
-      <td>initial</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Resets to default value (`visible`)</td>
-    </tr>
+              <tr>
+                <td>initial</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Resets to default value (`visible`)</td>
+              </tr>
 
-    <tr>
-      <td>unset</td>
-      <td>Depends</td>
-      <td>Depends</td>
-      <td>Acts as `inherit` or `initial`</td>
-    </tr>
-  </tbody>
-</table>
+              <tr>
+                <td>unset</td>
+                <td>Depends</td>
+                <td>Depends</td>
+                <td>Acts as `inherit` or `initial`</td>
+              </tr>
+            </tbody>
+          </table>
 
-</dd>
-<dd>
-  <button>Save</button>
-<button class="hide">Delete</button>
-<button>Cancel</button>
+        </dd>
+        <dd>
+          <button>Save</button>
+          <button class="hide">Delete</button>
+          <button>Cancel</button>
 
-  <pre>
+          <pre>
     <code>
       .hide {
            visibility: hidden;
@@ -1328,20 +1328,20 @@ visibility
 
     </code>
   </pre>
-</dd>
-<dd>Space of “Delete” button is still there</dd>
-            </dl>
-            <dl>
-              opacity
-              <dd>
-                opacity controls how transparent an element is.
-              </dd>
-              <dd>
-                It affects the element and all of its children.
-              </dd>
-              <dd>opacity accepts numbers from 0 to 1.</dd>
-              <dd>
-                <pre>
+        </dd>
+        <dd>Space of “Delete” button is still there</dd>
+      </dl>
+      <dl>
+        opacity
+        <dd>
+          opacity controls how transparent an element is.
+        </dd>
+        <dd>
+          It affects the element and all of its children.
+        </dd>
+        <dd>opacity accepts numbers from 0 to 1.</dd>
+        <dd>
+          <pre>
                   <code>
  button:disabled {
                  opacity: 0.5;
@@ -1349,9 +1349,9 @@ visibility
 
                   </code>
                 </pre>
-                Shows the button is inactive.
-              </dd>
-            </dl>
+          Shows the button is inactive.
+        </dd>
+      </dl>
 
 
     </div>
@@ -1361,24 +1361,312 @@ visibility
 
       <dl>
         position Property
-        <dd>Controls how an element is placed in the layout and how it responds to offsets (top, right, bottom, left).</dd>
-        
+        <dd>Controls how an element is placed in the layout and how it responds to offsets (top, right, bottom, left).
+        </dd>
+
       </dl>
       <dl>
         static
         <dd>Normal document flow</dd>
         <dd>top, right, bottom, left do not work</dd>
-        <dd><pre><code>
-          div {
-  position: static;
-}
+        <dd>
+          <pre><code>
+         .positioning{
+                      position: static;
+                      width: 120px;
+                      height: 100px;
+                      background: #000;
+                      color: white;
+                      padding: 20px;
+                      text-align: center;
+                      top: 2rem;
 
-        </code></pre></dd>
+                    }
+
+        </code></pre>
+        </dd>
+        <dd>
+          <div class="PBox">
+            <p class="positioning">Element</p>
+
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        relative
+        <dd>relative keeps the element in the normal document flow, but allows you to move it visually using top, left,
+          right, or bottom.</dd>
+
+
+        <dd>
+          <pre>
+          <code>
+            .rel{
+                  position: relative;
+                  width: 120px;
+                  height: 100px;
+                  background: #000;
+                  color: white;
+                  padding: 20px;
+                  text-align: center;
+                  margin-top: 5rem;
+                  margin-left: 18rem;
+                }
+
+          </code>
+        </pre>
+        </dd>
+        <dd>
+          <div class="PBox">
+            <p class="rel">Element</p>
+          </div>
+        </dd>
+        <dd>To slightly adjust an element without breaking layout</dd>
+
+      </dl>
+      <dl>
+        fixed
+        <dd>Scrollable Page Scroll then Position of element is fixed position</dd>
+        <dd>Left , Right , Top , Down Works But taking window position of screen</dd>
+        <dd>
+          Example : This Page Sticky Header
+          <pre>
+            <code>
+              .site-header {
+                            position: fixed;
+                            top: 0;
+                            width: 100%;
+                            background: #111827;
+                            color: #ffffff;
+                            height: 80px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 1000;
+                          }
+            </code>
+          </pre>
+        </dd>
+      </dl>
+      <dl>
+        sticky
+        <dd>Releases when the parent’s boundary is reached otherwise position is sticky on the screen</dd>
+        <dd>Sticky will NOT work if ANY parent has:
+          <pre>
+              <code>
+                overflow: hidden;
+                overflow: auto;
+                overflow: scroll;
+                transform: translate();
+                filter: blur();
+                perspective: 1px;
+
+              </code>
+            </pre>
+        </dd>
+        <dd>
+          <div class="PBox">
+            <p class="stick">Element</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus tempore omnis et excepturi vitae
+              officia enim, autem ipsum hic cumque porro fugiat sint ex soluta suscipit quidem maiores, minima velit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit accusamus, illum dolores porro
+              doloremque, exercitationem sed rerum labore ex officiis hic vero nobis architecto nam iste. Labore, ullam
+              sit?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error perferendis? Ipsam possimus dolore
+              delectus vero quia cum, commodi in vitae voluptatum vel, ad eius! Similique quidem molestias ut minima!
+            </p>
+          </div>
+        </dd>
+        <dd>Actual Real Example See At Bottom</dd>
+        <dd>Used When Addvertisement Or Sales Offers Or Dicount In Sales Or Show Event Program Ad</dd>
+
+      </dl>
+      <dl>
+        absolute
+        <dd>Help to Manage element inside parent. Otherwise Element Outside to box.</dd>
+        <dd>
+          <pre>
+              <code>
+                .parent {
+                       position: relative; <=Refferance
+                        width: 250px;
+                        height: 150px;
+                        background: steelblue;
+                        color: white;
+                        padding: 20px;
+                      } 
+
+                      .child {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background: black;
+                        color: white;
+                        padding: 4px 8px;
+                        font-size: 12px;
+                      }
+
+              </code>
+            </pre>
+        </dd>
+        <dd>
+          <div class="parent">
+            Parent Box
+            <span class="child">Element</span>
+          </div>
+
+        </dd>
+        <dd>
+          When to Use absolute
+          <pre>
+  ✔ Serach Bar 
+  ✔ Badges
+  ✔ Tooltips
+  ✔ Dropdowns
+  ✔ Icons inside buttons
+  ✔ Overlays
+            </pre>
+        </dd>
+      </dl>
+      <dl>
+        Z-Index + Absolute
+        <dd>Used In Pop Over lays , Side Menu Bars</dd>
+        <dd>
+          <div class="card4">
+            Card Content
+            <div class="badge">NEW</div>
+            <div class="overlay">Overlay</div>
+          </div>
+        </dd>
+        <dd>
+          <figure>
+            <img src="zind.png" alt="x">
+          </figure>
+        </dd>
       </dl>
 
-      
     </div>
 
+
+    <div class="explore-container">
+      <h2 class="explore-chapter-title">Flexbox (1D Layout)
+      </h2>
+
+      <dl>
+        FlexBox
+        <dd>1-D CSS layout system designed to align, distribute, and size items efficiently in a row or a column.</dd>
+       
+        <dd>
+          <pre>
+      Flexbox solves:
+                      Vertical centering
+                      Equal spacing between items
+                      Responsive alignment
+                      Dynamic resizing of elements
+    </pre>
+        </dd>
+        <dd>
+          <pre>
+            <code>
+              .cont{
+                    display: flex;
+                    width: 790px;
+                    height: 500px;
+                    background: #000;
+                }
+
+            </code>
+          </pre>
+                    By default Flex without direction is horizontal which called as main axis
+
+        </dd>
+        <dd>
+          <div class="cont1">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+
+
+          </div>
+        </dd>
+        <dd>
+          <figure>
+            <img src="flex.png" alt="">
+          </figure>
+        </dd>
+      </dl>
+      <dl>
+        Flex-Direction
+        <dd>Controls the main axis direction.</dd>
+        <dd> Default is row.</dd>
+        <dd>1. row (default) <br>
+        2. row-reverse <br>
+      3. column <br>
+    4. column-reverse</dd>
+    <dd>
+      <pre>
+        <code>
+          .cont2{
+                display: flex;
+                flex-direction: column-reverse;
+                width: 790px;
+                height: 500px;
+                background: #000;
+            }
+        </code>
+      </pre>
+    </dd>
+        <dd>
+          Column-Reverse
+           <div class="cont2">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+
+
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        Justify-Content
+        <dd>Works on the main axis</dd>
+        <dd>Space Around : Border Also get Space Around</dd>
+        <dd>
+          <figure>
+            <img src="jc.png" alt="">
+          </figure>
+        </dd>
+        <dd>
+          <pre>
+            <code>
+              .cont3{
+                    display: flex;
+                    justify-content:space-evenly;
+                    width: 790px;
+                    height: 500px;
+                    background: #000;
+                  }
+            </code>
+          </pre>
+        </dd>
+        <dd>
+             <div class="cont3">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+
+
+          </div>
+        </dd>
+      </dl>
+      <dl>
+        Allign items
+        <dd>
+          
+        </dd>
+      </dl>
+
+    </div>
 
 
 
@@ -1389,8 +1677,24 @@ visibility
 
   </section>
 
+  </div>
 
+  <div class="page">
+    <p>Scroll content...</p>
+    <p>Scroll content...</p>
+    <p>Scroll content...</p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam est illo doloribus tempora doloremque optio
+      laudantium temporibus obcaecati, nam mollitia blanditiis? Earum reiciendis, autem veritatis fuga quisquam
+      assumenda reprehenderit voluptas.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure voluptatibus facere aliquam placeat nesciunt
+      doloremque harum doloribus laborum ut! Assumenda minima sit porro sint reprehenderit nostrum doloribus consequatur
+      itaque.
+    </p>
 
+    <p class="sticky-bottom">
+      I move, then stick at bottom
+    </p>
 </body>
 
 </html>
